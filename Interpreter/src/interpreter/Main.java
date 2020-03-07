@@ -16,12 +16,15 @@ import java.io.InputStreamReader;
  */
 public class Main {
     public static void main(String arg[]) throws IOException{
-        //Input
         BufferedReader in =  new BufferedReader(new InputStreamReader(System.in));
-        // System.out.println("\n\tIngrese el problema separando por espacio cada termino y operador:");
+        
+        /*
+          Ingrese cada operador y operando separado por un espacio 
+        */
         String input = in.readLine();
              
         //Creamos un contexto
         Context newContext = new Context(input);
+        System.out.println(newContext.getOutput());
     }
 }

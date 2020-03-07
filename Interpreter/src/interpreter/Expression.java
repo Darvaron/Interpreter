@@ -10,5 +10,5 @@ package interpreter;
  * @author David Armando Rodríguez Varón, Juan Sebastián Sánchez Tabares
  */
 public interface Expression {
-    int interpreter();
+    abstract float interpreter();
 }
